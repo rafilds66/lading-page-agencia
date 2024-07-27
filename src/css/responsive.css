@@ -1,0 +1,88 @@
+/*Menu*/
+@media(max-width: 900px){
+    .header .menu{
+        display: block;
+        align-self: flex-end;
+    }
+
+    .header nav label{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header nav ul{
+        display: none;
+    }
+
+    .header input:checked ~ ul{
+        display: block;
+    }
+
+    .header nav{
+        position: absolute;
+        top: 8px;
+        z-index: 1;
+        right: 20px;
+    }
+
+    .header nav ul{
+        width: 200px;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .header nav ul a{
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+/*Hero*/
+
+@media(max-width: 426px){
+    .hero{
+        height: 60vh;
+    }
+
+    .hero h2{
+        font-size: 2.5rem;
+    }
+}
+
+/*About*/
+
+@media(max-width: 426px){
+    .about .item{
+        text-align: center;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/*Services*/
+
+@media(max-width: 426px){
+    .services{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Projects*/
+
+@media(max-width: 768px){
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 426px){
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
